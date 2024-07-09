@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array1 = [1, 2, 3, 4, 5]; 
+        const array2 = [7, 8, 9, 10]; 
+        const array3 = [17, 23, 45, 67];
+
+        function sevenBoom(arr) {
+            for (let num of arr){
+                if(num.toString().includes(7)){
+                    return "გამოვიდა, ჩანს";
+                }
+            } return "ამ მასივში ციფრი 7-იანი არსად ჩანს";
+        }
+
+        console.log(sevenBoom(array1));
+        console.log(sevenBoom(array2));
+        console.log(sevenBoom(array3));
+    </script>
+    
+</body>
+</html>
